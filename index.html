@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewired Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #fbe58b, #af821f);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            max-width: 900px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            flex-direction: row;
+        }
+        .left {
+            flex: 1;
+            padding: 40px;
+        }
+        .left h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fbe58b;
+        }
+        .left p {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        .left input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .checkbox input {
+            width: 16px;
+            height: 16px;
+        }
+        .left button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(90deg, #fbe58b, #af821f);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .left button:hover {
+            background: linear-gradient(90deg, #af821f, #fbe58b);
+        }
+        .right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            padding: 10px;
+        }
+        .right img {
+            width: 100%;
+            height: auto;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+        .trailer-btn {
+            position: absolute;
+            bottom: 20px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .trailer-btn:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .right {
+                order: -1;
+                width: 100%;
+            }
+            .right img {
+                width: 100%;
+                height: auto;
+                max-height: 400px;
+                object-fit: contain;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Rewired</h1>
+            <p>1 Season &middot; 13 Episodes <span style="background: gray; padding: 3px 5px; border-radius: 3px; font-size: 12px;">TV-PG</span></p>
+            <p>Join Dr. Joe Dispenza in unlocking your brain’s potential for profound transformation.</p>
+            <p><strong>Enter your email to start your free trial.</strong></p>
+            <input type="email" placeholder="Email">
+            <div class="checkbox">
+                <input type="checkbox" id="subscribe">
+                <label for="subscribe">I would like to receive emails from Gaia.</label>
+            </div>
+            <button>Get Started</button>
+        </div>
+        <div class="right">
+            <img src="Artboard 1.png" alt="Dr. Joe Dispenza">
+        </div>
+    </div>
+</body>
+</html>
